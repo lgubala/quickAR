@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/camera_overlay_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ProgressBar
+        android:id="@+id/loading_indicator"
+        style="@android:style/Widget.ProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+    <RelativeLayout
+        android:id="@+id/ltClick"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00000000" />
+
+    <FrameLayout
+        android:id="@+id/ltLogo"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/black">
+
+        <!--<TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="ANAL RAID ROCKS AGAIN"
+            android:textColor="@android:color/white"
+            android:textSize="25sp" />-->
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:padding="4dp"
+            android:src="@drawable/quickar_logo_white" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/ltArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:visibility="gone"
+        android:padding="4dp"
+        android:rotation="90">
+
+        <ImageView
+            android:id="@+id/imgCountDown"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:src="@drawable/app_countdown_1" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="24dp"
+            android:padding="4dp"
+            android:src="@drawable/app_arrow" />
+
+    </FrameLayout>
+
+</RelativeLayout>
